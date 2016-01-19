@@ -1,0 +1,3 @@
+学习AspectJ
+http://www.jianshu.com/p/bb9343e8af17
+https://github.com/uPhyca/gradle-android-aspectj-plugin

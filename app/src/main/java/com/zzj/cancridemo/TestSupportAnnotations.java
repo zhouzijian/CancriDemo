@@ -15,6 +15,8 @@ import java.lang.annotation.RetentionPolicy;
 public class TestSupportAnnotations {
     // gradle配置
     // compile 'com.android.support:support-annotations:20.0.0'
+// http://gold.xitu.io/entry/562a3e06ddb2084a8a142be8
+// http://www.flysnow.org/2015/08/13/android-tech-docs-support-annotations.html
 
 //    元 Annotation
 //    @Documented 是否会保存到 Javadoc 文档中
