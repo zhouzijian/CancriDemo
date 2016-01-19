@@ -28,13 +28,11 @@ public class MethodTracer {
 
     // withincode: 在functionB方法内
     @Pointcut("withincode(org.sdet.aspectj.MainActivity.functionB(..))")
-    public void invokeFuntionB(){
-
-    }
+    public void invokeFuntionB(){}
 
     // call:调用dummy方法
     @Pointcut("call(org.sdet.aspectj.MainActivity.dummy(..))")
-    public void invokeDummy() {}
+    public void invokeDummy(){}
 
     // 在functionB内调用dummy方法
     @Pointcut("invokeFuntionB() && invokeDummy()")
