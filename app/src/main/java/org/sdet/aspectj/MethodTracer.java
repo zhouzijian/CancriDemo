@@ -3,6 +3,8 @@ package org.sdet.aspectj;
 import android.util.Log;
 
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
@@ -42,4 +44,15 @@ public class MethodTracer {
     public void beforeInvokeDummyInsideFunctionB(JoinPoint joinPoint) {
         System.out.printf("Before.InvokeDummyInsideFunctionB.advice() called on '%s'", joinPoint);
     }
+
+//    @Around()
+//    public void aroundSave(ProceedingJoinPoint joinPoint) {
+//        try {
+//            joinPoint.proceed();
+//        } catch (Throwable throwable) {
+//            throwable.printStackTrace();
+//        }
+//
+//    }
+
 }
